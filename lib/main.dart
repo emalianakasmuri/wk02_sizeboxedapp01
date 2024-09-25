@@ -31,7 +31,7 @@ class SizeBoxedApp01 extends StatelessWidget {
       // Scaffold to lay the UI widgets
       home: Scaffold (
 
-        // Define AppBar with a style
+        // AppBar definition with style
         appBar: AppBar(
           backgroundColor: Colors.deepOrangeAccent,
           title: Text("SizeBoxed App 01"),
@@ -41,14 +41,17 @@ class SizeBoxedApp01 extends StatelessWidget {
           ),
         ),
 
+        // Putting the box in the center of the screen
         body: Center(
 
-          // Define a box with a text in it, that will not go beyond
-          // the defined size
+          // SizedBox definition
           child: SizedBox(
+
+              // Dimension definition
               width: 100,
               height: 200,
 
+              // Text to be displayed within the SizedBox dimension
               child: Container(
                   color: Colors.lime,
                   child: Text(
@@ -64,7 +67,7 @@ class SizeBoxedApp01 extends StatelessWidget {
 
       ),
 
-      // Turn of the debug flag
+      // Turn off the debug flag
       debugShowCheckedModeBanner: false,
     );
 
